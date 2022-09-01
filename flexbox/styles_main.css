@@ -14,14 +14,20 @@
     background-image: linear-gradient(to bottom right, black, grey);
 }
 
-.navbar-top {
-    display: flex;
-    flex-direction: row;
+.navbar-top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: black;
-
 }
 
-.navbar-top a {
+.navbar-top li {
+    float:left;
+}
+
+.navbar-top li a {
+    display: block;
     text-decoration: none;
     text-align: center;
     color: white;
@@ -44,9 +50,9 @@
 
 
 @media screen and (max-width:700px) {
-    .navbar-top {
-        flex-direction: column;
-
+    .navbar-top li {
+        float:none;
     }
+
 }
 
