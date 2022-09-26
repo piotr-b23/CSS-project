@@ -8,7 +8,10 @@
     top: 0;
     text-align: center;
     color: white;
+    font-family: 'Racing Sans One';
     font-size: 25px;
+    font-variant: small-caps;
+    letter-spacing: 1px;
     margin: 0;
     padding: 15px;
     background-image: linear-gradient(to bottom right, black, grey);
@@ -16,6 +19,9 @@
 
 .navbar-top {
     background-color: rgb(31, 30, 30);
+    font-family: 'Racing Sans One';
+    font-variant: small-caps;
+    letter-spacing: 1px;
 }
 
 .navbar-top ul {
@@ -45,7 +51,6 @@
 }
 
 .navbar-top ul li:hover {
-    color:black;
     border-radius: 15px;
     background-color: rgb(201, 201, 201);
 }
@@ -57,13 +62,13 @@
     margin: 20px 0;
     left: 0;
     border-radius: 15px;
-    background-color: black;
+    background-color: rgb(31, 30, 30);
 }
 
 .navbar-top li.active {
     color:white;
     border-radius: 15px;
-    background-color: rgb(63, 158, 34);
+    background-image: linear-gradient(to bottom right, rgb(236, 24, 24), rgb(165, 7, 7));
 }
 
 
