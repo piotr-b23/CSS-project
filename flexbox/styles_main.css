@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    font-family: 'Racing Sans One';
+    font-variant: small-caps;
     margin: 0;
     padding: 0;
 }
@@ -8,9 +10,7 @@
     top: 0;
     text-align: center;
     color: white;
-    font-family: 'Racing Sans One';
     font-size: 25px;
-    font-variant: small-caps;
     letter-spacing: 1px;
     margin: 0;
     padding: 15px;
@@ -19,8 +19,6 @@
 
 .navbar-top {
     background-color: rgb(31, 30, 30);
-    font-family: 'Racing Sans One';
-    font-variant: small-caps;
     letter-spacing: 1px;
 }
 
@@ -71,10 +69,44 @@
     background-image: linear-gradient(to bottom right, rgb(236, 24, 24), rgb(165, 7, 7));
 }
 
+.site-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-left {
+    flex: 15%;
+    padding: 15px;
+    background-image: linear-gradient(to bottom right, rgb(194, 194, 194), rgb(168, 168, 168));
+}
+
+.column-center {
+    flex: 75%;
+    color: white;
+    font-weight: normal;
+    padding: 15px;
+    background-image: linear-gradient(to bottom right, rgb(85, 85, 85), rgb(70, 70, 70));
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px;
+    background-image: linear-gradient(to bottom right, rgb(49, 46, 46), rgb(31, 31, 31));
+}
+
 
 @media screen and (max-width:700px) {
     .navbar-top ul {
         flex-direction: column;
+    }
+    .column-left {
+        flex: 100%;
+    }
+    .column-center {
+        flex: 100%;
     }
 
 }
