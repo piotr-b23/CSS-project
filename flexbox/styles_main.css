@@ -100,7 +100,7 @@
 .article {
     border-radius: 15px;
     background-image: linear-gradient(to bottom right, rgb(173, 91, 91), rgb(133, 30, 30));
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 
 }
 
@@ -120,6 +120,8 @@
     font-size: 45px;
     padding: 10px;
     text-align: justify;
+    font-family: 'Suez One';
+    font-variant: normal;
 
 }
 
@@ -132,7 +134,17 @@
     font-size: 25px;
     padding: 10px;
     text-align: justify;
+    font-family: 'Suez One';
+    font-variant: normal;
     
+}
+
+.article-separtor {
+    background-color: rgb(255, 255, 255);
+    width: 65%;
+    padding: 1px;
+    margin: 10px auto 13px auto;
+
 }
 
 
@@ -145,6 +157,11 @@
     }
     .column-center {
         flex: 100%;
+    }
+
+    .content-main-article {
+        font-size: 30px;
+    
     }
 
 }
