@@ -4,6 +4,11 @@
     font-variant: small-caps;
     margin: 0;
     padding: 0;
+    
+}
+
+body {
+    background-color: rgb(44, 44, 44);
 }
 
 .header {
@@ -77,7 +82,6 @@
 .column-left {
     flex: 15%;
     padding: 15px;
-    background-color: rgb(44, 44, 44);
 }
 
 .column-center {
@@ -85,7 +89,6 @@
     color: white;
     font-weight: normal;
     padding: 15px;
-    background-color: rgb(44, 44, 44);
 }
 
 .footer {
@@ -98,15 +101,15 @@
 }
 
 .article {
-    border-radius: 15px;
-    background-image: linear-gradient(to bottom right, rgb(173, 91, 91), rgb(133, 30, 30));
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, rgb(189, 8, 8), rgb(170, 4, 4));
     margin-bottom: 15px;
 
 }
 
 .article-small {
     border-radius: 5px;
-    background-image: linear-gradient(to bottom right, rgb(173, 173, 173), rgb(155, 155, 155));
+    background-image: linear-gradient(to bottom right, rgb(207, 207, 207), rgb(155, 155, 155));
     margin-bottom: 5px;
 
 }
