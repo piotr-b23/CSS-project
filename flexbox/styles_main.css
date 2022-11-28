@@ -198,7 +198,7 @@ input[type=button] {
     font-size: 35px;
     padding: 5px;
     border-radius: 10px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background-image: linear-gradient(to bottom right, rgb(221, 221, 221), rgb(177, 177, 177));
     
     
@@ -206,7 +206,7 @@ input[type=button] {
 
 input[type=button]:hover{
     background-image: linear-gradient(to bottom right, rgb(236, 24, 24), rgb(165, 7, 7));
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     
 }
 
