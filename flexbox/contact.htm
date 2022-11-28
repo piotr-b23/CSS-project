@@ -27,11 +27,59 @@
             </ul>
         </div>
 
-        <div class="footer">
-            <p>Strona stworzona przez Piotr Bobeł</p>
-            <p>Wszelkie prawa zastrzeżone</p>
-            <p>Brak zgody na wykorzystanie szablonu i strony bez uprzedniej zgody twórcy.</p>
+        <h1 class="site-header">Kontakt</h1>
+        <div class="contact-form" style="flex:1; margin-top: 25px;">
+            <div class="site-row">
+                <div class="column-left">
+                    <label for="fname">Imię: </label>
+                </div>
+                <div class="column-center">
+                    <input type="text" id="fname" name="fname"><br>
+                </div>
+            </div>
+            <div class="site-row">
+                <div class="column-left">
+                    <label for="discord-nickname">Nick na discordzie: </label>
+                </div>
+                <div class="column-center">
+                    <input type="text" id="discord-nickname" name="discord-nickname"><br>
+                </div>
+            </div>
+            <div class="site-row">
+                <div class="column-left">
+                    <label for="controler">Używany kontroler: </label>
+                </div>
+                <div class="column-center">
+                    <select id="controler" name="controler" class="used-controler">
+                        <option value="keyboard-mouse">Klawiatura/Myszka</option>
+                        <option value="gamepad">Pad</option>
+                        <option value="wheel">Kierownica</option>
+                    </select><br>
+                </div>
+            </div>
+            <div class="site-row">
+                <div class="column-left">
+                    <label for="faq">Dodatkowe: </label>
+                </div>
+                <div class="column-center">
+                    <textarea id="faq" name="faq" placeholder="Uwagi i pytania..."></textarea>
+                </div>
+            </div>
+            <div class="site-row">
+                <div style="flex:100%; padding:15px">
+                    <input type="button" id="send-button" value="Wyślij zgłoszenie">
+                </div>
+            </div>
+                  
         </div>
+
+        
+    <div class="footer">
+        <p>Strona stworzona przez Piotr Bobeł</p>
+        <p>Wszelkie prawa zastrzeżone</p>
+        <p>Brak zgody na wykorzystanie szablonu i strony bez uprzedniej zgody twórcy.</p>
+    </div>
+
 
     </body>
 </html>
