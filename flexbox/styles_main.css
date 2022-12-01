@@ -215,6 +215,34 @@ input[type=button]:hover{
     height: 250px;
 }
 
+.race-results{
+    text-align: center;
+    flex:1;
+    margin-top: 25px;
+
+}
+
+#results-2022-pt1{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    margin:auto;
+    width: 50%;
+    font-size: 35px;
+
+}
+
+#results-2022-pt1 th{
+    background-image: linear-gradient(to bottom right, rgb(236, 24, 24), rgb(165, 7, 7));
+}
+
+#results-2022-pt1 tr {
+    background-color: rgb(102, 102, 102);
+}
+
+#results-2022-pt1 tr:nth-child(even){
+    background-color: #aaaaaa;
+    color: rgb(0, 0, 0);
+}
 
 
 
@@ -240,6 +268,10 @@ input[type=button]:hover{
 
     .site-header{
         font-size: 35px;
+    }
+
+    #results-2022-pt1{
+        font-size: 20px;
     }
 
 }
