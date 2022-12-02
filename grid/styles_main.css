@@ -84,6 +84,10 @@ html, body {
     text-align: center;
 }
 
+.item-results{
+    grid-area: results;
+}
+
 
 .grid-main-container{
     display: grid;
@@ -133,6 +137,20 @@ html, body {
     'header'
     'navbar'
     'site-header'
+    'footer';
+    gap: 15px;
+}
+
+.grid-season-container{
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    min-height: 100%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    'header'
+    'navbar'
+    'site-header'
+    'results'
     'footer';
     gap: 15px;
 }
@@ -312,6 +330,28 @@ input[type=button]:hover{
 #faq{
     resize: none;
     height: 250px;
+}
+
+#results-2022-pt1{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    margin:auto;
+    width: 50%;
+    font-size: 35px;
+
+}
+
+#results-2022-pt1 th{
+    background-image: linear-gradient(to bottom right, rgb(236, 24, 24), rgb(165, 7, 7));
+}
+
+#results-2022-pt1 tr {
+    background-color: rgb(102, 102, 102);
+}
+
+#results-2022-pt1 tr:nth-child(even){
+    background-color: #aaaaaa;
+    color: rgb(0, 0, 0);
 }
 
 @media screen and (max-width:700px) {
