@@ -38,12 +38,52 @@ html, body {
 }
 
 .item-site-header{
+    text-align: center;
     grid-area: site-header;
 }
 
 .item-rules{
     grid-area: rules;
 }
+
+.item-form-name{
+    grid-area: form-name;
+}
+
+.item-form-name-answer{
+    grid-area: form-name-answer;
+}
+
+
+.item-form-nick{
+    grid-area: form-nick;
+}
+
+.item-form-nick-answer{
+    grid-area: form-nick-answer;
+}
+
+.item-form-controller{
+    grid-area: form-controller;
+}
+
+.item-form-controller-answer{
+    grid-area: form-controller-answer;
+}
+
+.item-form-addition{
+    grid-area: form-addition;
+}
+
+.item-form-addition-answer{
+    grid-area: form-addition-answer;
+}
+
+.item-form-button{
+    grid-area: form-button;
+    text-align: center;
+}
+
 
 .grid-main-container{
     display: grid;
@@ -53,7 +93,6 @@ html, body {
     'side-article side-article main-article main-article main-article main-article main-article main-article main-article'
     'footer footer footer footer footer footer footer footer footer' ;
     gap: 15px;
-
 }
 
 .grid-rule-container{
@@ -68,8 +107,21 @@ html, body {
     'rules'
     'footer';
     gap: 15px;
-    
+}
 
+.grid-contact-container{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header header header'
+    'navbar navbar navbar navbar navbar navbar navbar navbar navbar'
+    'site-header site-header site-header site-header site-header site-header site-header site-header site-header'
+    'form-name form-name form-name form-name-answer form-name-answer form-name-answer form-name-answer form-name-answer form-name-answer'
+    'form-nick form-nick form-nick form-nick-answer form-nick-answer form-nick-answer form-nick-answer form-nick-answer form-nick-answer'
+    'form-controller form-controller form-controller form-controller-answer form-controller-answer form-controller-answer form-controller-answer form-controller-answer form-controller-answer'
+    'form-addition form-addition form-addition form-addition-answer form-addition-answer form-addition-answer form-addition-answer form-addition-answer form-addition-answer'
+    'form-button form-button form-button form-button form-button form-button form-button form-button form-button'
+    'footer footer footer footer footer footer footer footer footer' ;
+    gap: 15px;
 }
 
 .header {
@@ -212,6 +264,43 @@ html, body {
     padding: 5px;  
 }
 
+label {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    padding: 15px;
+}
+
+input[type=text], .used-controler, #faq {
+    width: 75%;
+    height: 50px;
+    font-size: 35px;
+    padding: 5px;
+}
+
+
+input[type=button] {
+    width: 90%;
+    height: 65px;
+    font-size: 35px;
+    padding: 15px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to bottom right, rgb(221, 221, 221), rgb(177, 177, 177));
+    
+    
+}
+
+input[type=button]:hover{
+    background-image: linear-gradient(to bottom right, rgb(236, 24, 24), rgb(165, 7, 7));
+    color: rgb(255, 255, 255);
+    
+}
+
+#faq{
+    resize: none;
+    height: 250px;
+}
+
 @media screen and (max-width:700px) {
     .grid-main-container{
         grid-template-areas:
@@ -224,5 +313,22 @@ html, body {
 
     .navbar-top ul {
         flex-direction: column;
+    }
+
+    .grid-contact-container{
+        grid-template-areas:
+        'header'
+        'navbar'
+        'site-header'
+        'form-name'
+        'form-name-answer'
+        'form-nick'
+        'form-nick-answer'
+        'form-controller'
+        'form-controller-answer'
+        'form-addition'
+        'form-addition-answer'
+        'form-button'
+        'footer' ;
     }
 }
