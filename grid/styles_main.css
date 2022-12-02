@@ -124,6 +124,19 @@ html, body {
     gap: 15px;
 }
 
+.grid-season-tbc-container{
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    min-height: 100%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    'header'
+    'navbar'
+    'site-header'
+    'footer';
+    gap: 15px;
+}
+
 .header {
     top: 0;
     text-align: center;
