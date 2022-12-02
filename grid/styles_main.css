@@ -11,6 +11,10 @@ body {
     background-color: rgb(44, 44, 44);
 }
 
+html, body {
+    height: 100%;
+}
+
 .item-header{
     grid-area: header;
 }
@@ -33,6 +37,14 @@ body {
     grid-area: footer;
 }
 
+.item-site-header{
+    grid-area: site-header;
+}
+
+.item-rules{
+    grid-area: rules;
+}
+
 .grid-main-container{
     display: grid;
     grid-template-areas:
@@ -41,6 +53,22 @@ body {
     'side-article side-article main-article main-article main-article main-article main-article main-article main-article'
     'footer footer footer footer footer footer footer footer footer' ;
     gap: 15px;
+
+}
+
+.grid-rule-container{
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    min-height: 100%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    'header'
+    'navbar'
+    'site-header'
+    'rules'
+    'footer';
+    gap: 15px;
+    
 
 }
 
@@ -165,7 +193,23 @@ body {
     font-weight: bold;
     padding: 15px;
     background-image: linear-gradient(to bottom right, rgb(59, 59, 59), rgb(31, 31, 31));
-    bottom: 0;
+}
+
+.site-header{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 65px;
+}
+
+.rule-list ol li{
+    list-style-type:decimal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    list-style-position: inside;
+    font-size: 33px;
+    font-family: 'Suez One';
+    font-variant: normal;
+    padding: 5px;  
 }
 
 @media screen and (max-width:700px) {
