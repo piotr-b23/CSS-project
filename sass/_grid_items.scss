@@ -1,0 +1,72 @@
+.item-header{
+    grid-area: header;
+}
+
+.item-navbar{
+    grid-area: navbar;
+}
+
+.item-side-article{
+    grid-area: side-article;
+    padding: 15px;
+}
+
+.item-main-article{
+    grid-area: main-article;
+    padding: 15px;
+}
+
+.item-footer{
+    grid-area: footer;
+}
+
+.item-site-header{
+    text-align: center;
+    grid-area: site-header;
+}
+
+.item-rules{
+    grid-area: rules;
+}
+
+.item-form-name{
+    grid-area: form-name;
+}
+
+.item-form-name-answer{
+    grid-area: form-name-answer;
+}
+
+
+.item-form-nick{
+    grid-area: form-nick;
+}
+
+.item-form-nick-answer{
+    grid-area: form-nick-answer;
+}
+
+.item-form-controller{
+    grid-area: form-controller;
+}
+
+.item-form-controller-answer{
+    grid-area: form-controller-answer;
+}
+
+.item-form-addition{
+    grid-area: form-addition;
+}
+
+.item-form-addition-answer{
+    grid-area: form-addition-answer;
+}
+
+.item-form-button{
+    grid-area: form-button;
+    text-align: center;
+}
+
+.item-results{
+    grid-area: results;
+}
