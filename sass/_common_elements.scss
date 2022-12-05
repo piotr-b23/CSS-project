@@ -20,78 +20,74 @@ html, body {
 .header {
     top: 0;
     text-align: center;
-    color: white;
+    color: $colorWhite;
     font-size: 25px;
     letter-spacing: 1px;
     margin: 0 0 -15px 0;
     padding: 15px;
-    background-image: linear-gradient(to bottom right, black, grey);
+    background-image: $colorSiteHeader;
 }
 
 
 .navbar-top {
-    background-color: rgb(31, 30, 30);
+    background-color: $colorNavbar;
     letter-spacing: 1px;
-}
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items:center;
+        
+        li {
+            position: relative;
+            padding: 20px;
+            display: block;
 
-.navbar-top ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    align-items:center;
-}
+            a {
+                text-decoration: none;
+                text-align: center;
+                color: $colorWhite;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            ul {
+                display: none;
+                text-align: center;
+            }
+        }
+        li:hover {
+            border-radius: 15px;
+            background-color: $colorNavbarHover;
+            ul {
+                display: block;
+                position: absolute;
+                width: 100%;
+                margin: 20px 0;
+                left: 0;
+                border-radius: 15px;
+                background-color: $colorNavbar;
+            }
+        }
 
-.navbar-top ul li {
-    position: relative;
-    padding: 20px;
-    display: block;
-}
-
-.navbar-top ul li a {
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.navbar-top ul li ul {
-    display: none;
-    text-align: center;
-}
-
-.navbar-top ul li:hover {
-    border-radius: 15px;
-    background-color: rgb(201, 201, 201);
-}
-
-.navbar-top ul li:hover ul {
-    display: block;
-    position: absolute;
-    width: 100%;
-    margin: 20px 0;
-    left: 0;
-    border-radius: 15px;
-    background-color: rgb(31, 30, 30);
-}
-
-.navbar-top li.active {
-    color:white;
-    border-radius: 15px;
-    background-image: linear-gradient(to bottom right, rgb(236, 24, 24), rgb(165, 7, 7));
+    }
+    li.active {
+        color:$colorWhite;
+        border-radius: 15px;
+        background-image: $colorNavbarActive;
+    }
 }
 
 .footer {
     text-align: center;
-    color: white;
+    color: $colorWhite;
     font-size: 25px;
     font-weight: bold;
     padding: 15px;
-    background-image: linear-gradient(to bottom right, rgb(59, 59, 59), rgb(31, 31, 31));
+    background-image: $colorFooter;
 }
 
 .site-header{
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: $colorWhite;
     font-size: 65px;
 }

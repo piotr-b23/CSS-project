@@ -17,50 +17,44 @@ html, body {
 .header {
   top: 0;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 25px;
   letter-spacing: 1px;
   margin: 0 0 -15px 0;
   padding: 15px;
-  background-image: linear-gradient(to bottom right, black, grey);
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(128, 128, 128));
 }
 
 .navbar-top {
   background-color: rgb(31, 30, 30);
   letter-spacing: 1px;
 }
-
 .navbar-top ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   align-items: center;
 }
-
 .navbar-top ul li {
   position: relative;
   padding: 20px;
   display: block;
 }
-
 .navbar-top ul li a {
   text-decoration: none;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 25px;
   font-weight: bold;
 }
-
 .navbar-top ul li ul {
   display: none;
   text-align: center;
 }
-
 .navbar-top ul li:hover {
   border-radius: 15px;
   background-color: rgb(201, 201, 201);
 }
-
 .navbar-top ul li:hover ul {
   display: block;
   position: absolute;
@@ -70,16 +64,15 @@ html, body {
   border-radius: 15px;
   background-color: rgb(31, 30, 30);
 }
-
 .navbar-top li.active {
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 15px;
   background-image: linear-gradient(to bottom right, rgb(236, 24, 24), rgb(165, 7, 7));
 }
 
 .footer {
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 25px;
   font-weight: bold;
   padding: 15px;

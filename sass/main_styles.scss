@@ -13,27 +13,26 @@
 
 .article-small {
     border-radius: 5px;
-    background-image: linear-gradient(to bottom right, rgb(207, 207, 207), rgb(155, 155, 155));
+    background-image: $colorSmallArticle;
     margin-bottom: 5px;
 
 }
 
 .header-side-article {
     padding: 3px;
-
 }
 
 .content-side-article {
     font-size: 25px;
     padding: 10px;
     text-align: justify;
-    font-family: 'Suez One';
+    font-family: $fontReading;
     font-variant: normal;
     
 }
 
 .article-separtor {
-    background-color: rgb(255, 255, 255);
+    background-color: $colorWhite;
     width: 65%;
     padding: 1px;
     margin: 10px auto 13px auto;
@@ -42,7 +41,7 @@
 
 .article {
     border-radius: 5px;
-    background-image: linear-gradient(to bottom right, rgb(189, 8, 8), rgb(170, 4, 4));
+    background-image: $colorArticle;
     margin-bottom: 15px;
 
 }
@@ -56,7 +55,7 @@
     font-size: 45px;
     padding: 10px;
     text-align: justify;
-    font-family: 'Suez One';
+    font-family: $fontReading;
     font-variant: normal;
 
 }
