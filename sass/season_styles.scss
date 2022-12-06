@@ -1,0 +1,50 @@
+@import "_common_elements.scss";
+@import "grid_items.scss";
+
+
+.grid-season-tbc-container{
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    min-height: 100%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    'header'
+    'navbar'
+    'site-header'
+    'footer';
+    gap: 15px;
+}
+
+.grid-season-container{
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    min-height: 100%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    'header'
+    'navbar'
+    'site-header'
+    'results'
+    'footer';
+    gap: 15px;
+}
+
+#results-2022-pt1{
+    color:$colorWhite;
+    text-align: center;
+    margin:auto;
+    width: 50%;
+    font-size: 35px;
+
+    th{
+        background-image: $colorResultsHeader;
+    }
+    tr {
+        background-color: $colorResultsRow;
+    }
+    tr:nth-child(even){
+        background-color: $colorResultsChildEven;
+        color: $colorBlack;
+    }
+
+}

@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  font-family: "Racing Sans One";
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(44, 44, 44);
+}
+
+html, body {
+  height: 100%;
+}
+
+.header {
+  top: 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin: 0 0 -15px 0;
+  padding: 15px;
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(128, 128, 128));
+}
+
+.navbar-top {
+  background-color: rgb(31, 30, 30);
+  letter-spacing: 1px;
+}
+.navbar-top ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+}
+.navbar-top ul li {
+  position: relative;
+  padding: 20px;
+  display: block;
+}
+.navbar-top ul li a {
+  text-decoration: none;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: bold;
+}
+.navbar-top ul li ul {
+  display: none;
+  text-align: center;
+}
+.navbar-top ul li:hover {
+  border-radius: 15px;
+  background-color: rgb(201, 201, 201);
+}
+.navbar-top ul li:hover ul {
+  display: block;
+  position: absolute;
+  width: 100%;
+  margin: 20px 0;
+  left: 0;
+  border-radius: 15px;
+  background-color: rgb(31, 30, 30);
+}
+.navbar-top li.active {
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  background-image: linear-gradient(to bottom right, rgb(236, 24, 24), rgb(165, 7, 7));
+}
+
+.footer {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px;
+  background-image: linear-gradient(to bottom right, rgb(59, 59, 59), rgb(31, 31, 31));
+}
+
+.site-header {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 65px;
+}
+
+.item-header {
+  grid-area: header;
+}
+
+.item-navbar {
+  grid-area: navbar;
+}
+
+.item-side-article {
+  grid-area: side-article;
+  padding: 15px;
+}
+
+.item-main-article {
+  grid-area: main-article;
+  padding: 15px;
+}
+
+.item-footer {
+  grid-area: footer;
+}
+
+.item-site-header {
+  text-align: center;
+  grid-area: site-header;
+}
+
+.item-rules {
+  grid-area: rules;
+}
+
+.item-form-name {
+  grid-area: form-name;
+}
+
+.item-form-name-answer {
+  grid-area: form-name-answer;
+}
+
+.item-form-nick {
+  grid-area: form-nick;
+}
+
+.item-form-nick-answer {
+  grid-area: form-nick-answer;
+}
+
+.item-form-controller {
+  grid-area: form-controller;
+}
+
+.item-form-controller-answer {
+  grid-area: form-controller-answer;
+}
+
+.item-form-addition {
+  grid-area: form-addition;
+}
+
+.item-form-addition-answer {
+  grid-area: form-addition-answer;
+}
+
+.item-form-button {
+  grid-area: form-button;
+  text-align: center;
+}
+
+.item-results {
+  grid-area: results;
+}
+
+.grid-season-tbc-container {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  min-height: 100%;
+  grid-template-columns: 100%;
+  grid-template-areas: "header" "navbar" "site-header" "footer";
+  gap: 15px;
+}
+
+.grid-season-container {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  min-height: 100%;
+  grid-template-columns: 100%;
+  grid-template-areas: "header" "navbar" "site-header" "results" "footer";
+  gap: 15px;
+}
+
+#results-2022-pt1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  font-size: 35px;
+}
+#results-2022-pt1 th {
+  background-image: linear-gradient(to bottom right, rgb(236, 24, 24), rgb(165, 7, 7));
+}
+#results-2022-pt1 tr {
+  background-color: rgb(102, 102, 102);
+}
+#results-2022-pt1 tr:nth-child(even) {
+  background-color: rgb(177, 177, 177);
+  color: rgb(0, 0, 0);
+}/*# sourceMappingURL=season_styles.css.map */
