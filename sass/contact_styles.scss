@@ -1,0 +1,72 @@
+@import "_common_elements.scss";
+@import "grid_items.scss";
+
+.grid-contact-container{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header header header'
+    'navbar navbar navbar navbar navbar navbar navbar navbar navbar'
+    'site-header site-header site-header site-header site-header site-header site-header site-header site-header'
+    'form-name form-name form-name form-name-answer form-name-answer form-name-answer form-name-answer form-name-answer form-name-answer'
+    'form-nick form-nick form-nick form-nick-answer form-nick-answer form-nick-answer form-nick-answer form-nick-answer form-nick-answer'
+    'form-controller form-controller form-controller form-controller-answer form-controller-answer form-controller-answer form-controller-answer form-controller-answer form-controller-answer'
+    'form-addition form-addition form-addition form-addition-answer form-addition-answer form-addition-answer form-addition-answer form-addition-answer form-addition-answer'
+    'form-button form-button form-button form-button form-button form-button form-button form-button form-button'
+    'footer footer footer footer footer footer footer footer footer' ;
+    gap: 15px;
+}
+
+label {
+    color: $colorWhite;
+    font-size: 35px;
+    padding: 15px;
+}
+
+input[type=text], .used-controler, #faq {
+    width: 75%;
+    height: 50px;
+    font-size: 35px;
+    padding: 5px;
+}
+
+
+input[type=button] {
+    width: 90%;
+    height: 65px;
+    font-size: 35px;
+    padding: 15px;
+    border-radius: 10px;
+    color: $colorBlack;
+    background-image: $colorButton;
+}
+
+input[type=button]:hover{
+    background-image: $colorButtonHover;
+    color: $colorWhite;
+    
+}
+
+#faq{
+    resize: none;
+    height: 250px;
+}
+
+@media screen and (max-width:700px) {
+
+    .grid-contact-container{
+        grid-template-areas:
+        'header'
+        'navbar'
+        'site-header'
+        'form-name'
+        'form-name-answer'
+        'form-nick'
+        'form-nick-answer'
+        'form-controller'
+        'form-controller-answer'
+        'form-addition'
+        'form-addition-answer'
+        'form-button'
+        'footer' ;
+    }
+}
